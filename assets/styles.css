@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 :root {
+  --violet-blue-crayola: #7776bcff;
+  --languid-lavender: #cdc7e5ff;
+  --light-yellow: #fffbdbff;
+  --corn: #ffec51ff;
+  --tomato: #ff674dff;
+  --electric: #23bdf7;
+  --strong-text: #160524;
 }
 
 * {
@@ -10,4 +17,33 @@
   font-family: "Poppins", "sans-serif";
   text-decoration: none;
   list-style-type: none;
+}
+
+/* header  */
+
+header {
+  background: var(--corn);
+  color: white;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  height: 65px;
+  padding: 0 35px;
+  justify-content: space-between;
+}
+
+.navbar,
+.navbar--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar--list {
+  gap: 30px;
+}
+
+.nav-logo {
+  height: 65px;
 }
