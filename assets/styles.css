@@ -7,7 +7,11 @@
   --corn: #ffec51ff;
   --tomato: #ff674dff;
   --electric: #23bdf7;
-  --strong-text: #160524;
+  --strong-text: #200932;
+  --light-electric: #d59d71;
+  --pinky: #fbd3e9;
+  --green-grass: #0f9b0f;
+  --background-rose: #e5bcdb;
 }
 
 * {
@@ -42,6 +46,13 @@ header {
 
 .navbar--list {
   gap: 30px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar--list a {
+  color: var(--strong-text);
 }
 
 .nav-logo {
@@ -56,23 +67,31 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
+  background: linear-gradient(to bottom, var(--light-yellow), var(--pinky));
+  /* background: var(--light-yellow); */
 }
 
 /* HERO  */
 
 #hero {
+  background: var(--background-rose);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
   padding: 70px 0px;
   margin-top: 65px;
   max-width: 1200px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   background-image: url(./images/top-view-of-lemon-flavored-ice-cream.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
-  background-color: #160524;
 }
 
 .hero-text {
@@ -83,6 +102,23 @@ main {
   align-items: center;
   gap: 20px;
   padding: 0 20px;
+  width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 28px;
+}
+
+.hero--h1_color {
+  color: var(--tomato);
+  font-weight: 800;
+}
+
+.hero--h1_color_gt {
+  background: linear-gradient(to right, var(--tomato), #0f9b0f);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .hero-bttns {
@@ -99,29 +135,146 @@ main {
   padding: 15px;
 }
 
-/* hero  */
+/* INFO  */
 
 #info {
   padding: 70px 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+.info-card {
+  padding: 10px;
+  border-radius: 25px;
+  width: 500px;
+  height: 380px;
+  background: url(./images/about-us-imgs/ice-cream-about-us.webp) no-repeat
+    center/cover;
+}
+
+.info--text {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
+  max-width: 850px;
+}
+
+.info--text h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.info--text p {
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 750px;
 }
 
 .info--container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
 }
 
-.info-card {
+.info--container--colums {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
+}
+
+.info--container--card {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.info--card--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.info--icon img {
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  padding: 5px;
+}
+/* Helados  */
+
+#Ice-creams {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+.Ice-creams-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.Ice-cream-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 225px;
+}
+
+.Ice-cream-img img {
+  height: 250px;
+  width: 225px;
   border-radius: 15px;
-  gap: 15px;
+}
+
+.Ice-cream-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Ice-cream-card p {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.Ice-cream-card span {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--green-grass);
+}
+
+.Ice-cream-review {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Ice-cream-review p {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.buy {
+  cursor: pointer;
+}
+
+h2 span {
+  color: var(--tomato);
 }
