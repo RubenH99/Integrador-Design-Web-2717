@@ -172,3 +172,24 @@ html {
   animation: typewriter 1.2s 1.4s steps(6) forwards,
     blink 0.8s steps(6) infinite;
 }
+
+.overlay {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+#cart-toggle:checked ~ .overlay {
+  display: block;
+}
+
+#menu-toggle:checked ~ .overlay {
+  display: block;
+}

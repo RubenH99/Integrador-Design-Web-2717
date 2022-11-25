@@ -61,6 +61,11 @@ header {
   height: 65px;
 }
 
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
 /* MAIN */
 
 main {
