@@ -13,6 +13,17 @@
   }
 }
 
+@media (max-width: 800px) {
+  #hero p {
+    background: linear-gradient(to right, #faebd7, transparent);
+    font-weight: 500;
+    color: var(--strong-text);
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+  }
+}
+
 @media (max-width: 517px) {
   .info--container {
     flex-direction: column;
@@ -40,6 +51,16 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+
+  #Ice-creams {
+    text-align: center;
+  }
+
+  #hero {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
