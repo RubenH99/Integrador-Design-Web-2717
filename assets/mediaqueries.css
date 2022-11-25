@@ -1,0 +1,69 @@
+@media (max-width: 954px) {
+  .info--text {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #info {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 517px) {
+  .info--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .info-card {
+    display: none;
+  }
+
+  .contact-email {
+    padding: 4px;
+    width: 80%;
+  }
+
+  .contact-email button {
+    padding: 5px;
+    background-color: var(--tomato);
+    color: var(--light-yellow);
+  }
+
+  .Ice-cream-card {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 416px) {
+  #contact {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* login/register */
+
+@media (max-width: 617px) {
+  .img-login {
+    display: none;
+  }
+
+  .login-card,
+  .reg-card {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: unset;
+  }
+}

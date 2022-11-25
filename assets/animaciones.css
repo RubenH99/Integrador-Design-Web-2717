@@ -1,0 +1,174 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
+
+.navbar--list li {
+  position: relative;
+  padding: 0;
+}
+
+.navbar--list li a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--strong-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.navbar--list li a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.btn-add {
+  transition: all 0.2s ease-out;
+}
+
+.btn-add:hover {
+  background-color: var(--tomato);
+  transition: all 0.2s ease-in;
+  color: var(--light-yellow);
+  animation: scale 1s infinite alternate;
+}
+
+.reg:hover {
+  background: linear-gradient(to right, var(--bg-login), var(--corn));
+  color: var(--strong-text);
+  font-weight: 600;
+}
+
+.init:hover {
+  background: linear-gradient(to right, var(--corn), var(--green-grass));
+  color: var(--strong-text);
+  font-weight: 600;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(to right, var(--corn), var(--electric));
+  color: var(--strong-text);
+  font-weight: 600;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.icon-login {
+  animation: scale 1s infinite alternate;
+}
+
+.Ice-cream-img img {
+  transition: all 0.3s linear;
+}
+
+.Ice-cream-img img:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.03);
+}
+
+.contact-info i {
+  transition: all 0.4s ease-out;
+}
+
+.contact-info i:hover {
+  transition: all 0.4s ease-in;
+  transform: scale(1.25);
+  color: var(--violet-blue-crayola);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.hero-text h1 {
+  animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
+
+.hero-text p {
+  opacity: 0;
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  animation-delay: 0.3s;
+}
+.hero-text a {
+  opacity: 0;
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+    opacity: 0;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+.hero--h1_write {
+  position: relative;
+  background: linear-gradient(to right, #a37b35, #0f9b0f);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  z-index: 1;
+}
+
+.hero--h1_write::before,
+.hero--h1_write::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero--h1_write::before {
+  background-color: #dcc2df;
+  animation: typewriter 1.2s 1.5s steps(6) forwards;
+}
+
+.hero--h1_write::after {
+  width: 0.1rem;
+  background: linear-gradient(to right, var(--tomato), #0f9b0f);
+  animation: typewriter 1.2s 1.4s steps(6) forwards,
+    blink 0.8s steps(6) infinite;
+}

@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🍦 Muthella Helados</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/animaciones.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
   </head>
   <body>
     <header>
@@ -18,11 +27,10 @@
       </a>
       <nav class="navbar">
         <ul class="navbar--list">
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="">Nosotros</a></li>
-          <li><a href="">Helados</a></li>
-          <li><a href="">Galería</a></li>
-          <li><a href="">Contacto</a></li>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#info">Nosotros</a></li>
+          <li><a href="#Ice-creams">Helados</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -34,26 +42,26 @@
               <span class="hero--h1_color">Crear helado</span> es mucho más para
               nosotros. Es hacerlo
               <span class="hero--h1_color_gt"
-                >Arte<span class="hero--h1_write">sanal</span>.</span
+                >Arte<span class="hero--h1_write">sanal.</span></span
               >
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-              nostrum doloribus debitis labore ea laboriosam molestias,
-              architecto cumque quod quis, illo eveniet reiciendis iure
-              provident voluptas similique. Fugiat, similique! Molestiae. Quos
-              itaque corporis natus ducimus. Recusandae, culpa? Non illum
-              possimus delectus at veniam voluptatibus reprehenderit cumque
-              laboriosam natus nihil fugiat, distinctio numquam error! Ea modi
-              odit, quae impedit odio ipsam! Dolorem, perferendis repellat
-              libero, provident mollitia repudiandae commodi necessitatibus
-              ullam odio deserunt explicabo facere, illum quod recusandae labore
-              delectus ipsum cupiditate laborum placeat? Qui repellat modi
-              reprehenderit laborum neque suscipit. Animi, facilis inventore.
+              En Muthella Helados vas a poder disfrutar del verdadero sabor de
+              tus gustos favoritos. Desde los sabores clasicos de siempre hasta
+              los sabores frutales mas naturales y deliciosos que hayas probado
+              nunca. No solo nuestro helado es sinonimo de calidad, sino que es
+              la primera opción para todo amante del helado. Porque nada es
+              mejor para un amante del helado, que el helado hecho por los
+              mismos amantes.
             </p>
             <div class="hero-bttns">
-              <button class="btn-add reg"><a href="">Registrarse</a></button>
-              <button class="btn-add ini"><a href="">Iniciar Sesión</a></button>
+              <a href="./pages/register.html"
+                ><button class="btn-add reg">Registrarse</button></a
+              >
+
+              <a href="./pages/login.html"
+                ><button class="btn-add init">Iniciar Sesión</button></a
+              >
             </div>
           </div>
         </div>
@@ -63,16 +71,17 @@
         <div class="info--text">
           <h2>¿Por qué elegir nuestro <span>Helado?</span></h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit
-            accusamus iste numquam fugiat nisi veritatis nostrum, tenetur eum
-            aliquam voluptas unde cum dolore laudantium impedit quod, quaerat
-            laboriosam officia!
+            Con nosotros vas a tener asegurado helado hecho con ingredientes de
+            primera calidad, amigables con el planeta y con el mejor sabor.
+            Ademas, si te unis a la familia Muthella siempre tendras descuentos
+            y beneficios exclusivos. El helado es para compartir, ¡Y que mejor
+            que con nuestra familia!
           </p>
           <div class="info--container">
             <div class="info--container--colums">
               <div class="info--container--card">
-                <div class="info--icon">
-                  <img src="./assets/images/about-us-imgs/natural.png" alt="" />
+                <div class="info--icon_seed">
+                  <i class="fa-solid fa-seedling"></i>
                 </div>
                 <div class="info--card--text">
                   <h3>Todo Natural</h3>
@@ -83,46 +92,41 @@
                 </div>
               </div>
               <div class="info--container--card">
-                <div class="info--icon">
-                  <img src="./assets/images/about-us-imgs/badges.png" alt="" />
+                <div class="info--icon_medal">
+                  <i class="fa-solid fa-medal"></i>
                 </div>
                 <div class="info--card--text">
                   <h3>Beneficios Exclusivos</h3>
                   <p>
-                    Cada uno de nuestros sabores esta elaborado con productos
-                    100%n naturales y amigables con nuestro planeta
+                    Registrate y podras acceder a cientos de descuentos y
+                    beneficos, ademas de participar en sorteos mensuales.
                   </p>
                 </div>
               </div>
             </div>
             <div class="info--container--colums">
               <div class="info--container--card">
-                <div class="info--icon">
-                  <img
-                    src="./assets/images/about-us-imgs/fresh-ingredients.jpg"
-                    alt=""
-                  />
+                <div class="info--icon_lemon">
+                  <i class="fa-solid fa-lemon"></i>
                 </div>
                 <div class="info--card--text">
                   <h3>Ingredientes de Primera Calidad</h3>
                   <p>
-                    Cada uno de nuestros sabores esta elaborado con productos
-                    100%n naturales y amigables con nuestro planeta
+                    Los ingredientes que usamos son los mejores del mercado,
+                    para darte los gustos que te mereces y amas. Para vos, solo
+                    lo mejor 💜
                   </p>
                 </div>
               </div>
               <div class="info--container--card">
-                <div class="info--icon">
-                  <img
-                    src="./assets/images/about-us-imgs/delivery.png"
-                    alt=""
-                  />
+                <div class="info--icon_truck">
+                  <i class="fa-solid fa-truck"></i>
                 </div>
                 <div class="info--card--text">
                   <h3>Servicio de Delivery Veloz</h3>
                   <p>
-                    Cada uno de nuestros sabores esta elaborado con productos
-                    100%n naturales y amigables con nuestro planeta
+                    Velocidad y amabilidad. Dos atributos que todos nuestros
+                    repartidores tienen y respetan en cada una de sus entregas.
                   </p>
                 </div>
               </div>
@@ -220,8 +224,48 @@
           </div>
         </div>
       </section>
-      <section id="contact"></section>
+      <section id="contact">
+        <h2>Subscribite a nuestro <span>Newsletter</span></h2>
+        <p>
+          Dejanos tu email, y vamos a mantenerte al tanto de todas nuestras
+          novedades. Desde sabores nuevos, nuevos locales, hasta nuevas
+          oportunidades de descuentos, sorteos ¡Y Muchas cosas más!
+        </p>
+        <div class="contact-email">
+          <input type="email" name="" id="" />
+          <button type="submit" class="btn-add">Subscribite</button>
+        </div>
+        <div class="contact-info">
+          <div>
+            <img src="./assets/images/Icon-Muthella.png" alt="" />
+            <div class="contact-icon-social">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-square-pinterest"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="contact-info-container">
+            <p>Muthellaicecream@gmail.com</p>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="contact-info-container">
+            <p>+54 1176892046</p>
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="contact-info-container">
+            <p>Mirar en Google Map</p>
+            <i class="fa-solid fa-location-dot map"></i>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>
+        © 2022 Muthella Helados | Todos los derechos reservados | Hecho por
+        Rubén Herrera
+      </p>
+    </footer>
   </body>
 </html>

@@ -9,9 +9,10 @@
   --electric: #23bdf7;
   --strong-text: #200932;
   --light-electric: #d59d71;
-  --pinky: #fbd3e9;
+  --pinky: #f0cbce;
   --green-grass: #0f9b0f;
-  --background-rose: #e5bcdb;
+  --background-rose: #dcbddf;
+  --bg-login: #cb5758;
 }
 
 * {
@@ -35,6 +36,7 @@ header {
   height: 65px;
   padding: 0 35px;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .navbar,
@@ -106,7 +108,7 @@ main {
 }
 
 .hero-text h1 {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .hero--h1_color {
@@ -119,6 +121,7 @@ main {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  white-space: nowrap;
 }
 
 .hero-bttns {
@@ -133,6 +136,9 @@ main {
   border-radius: 15px;
   border: none;
   padding: 15px;
+  cursor: pointer;
+  background-color: var(--light-yellow);
+  color: var(--strong-text);
 }
 
 /* INFO  */
@@ -202,11 +208,69 @@ main {
   gap: 14px;
 }
 
-.info--icon img {
-  height: 70px;
+.info--icon_seed {
+  background-color: #7ed957;
+  height: 35px;
   width: 70px;
-  border-radius: 10px;
   padding: 5px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info--icon_seed i {
+  color: var(--green-grass);
+  font-size: 25px;
+  font-weight: 600;
+}
+.info--icon_medal {
+  background-color: #ffde59;
+  height: 35px;
+  width: 70px;
+  padding: 5px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info--icon_medal i {
+  color: #ff914d;
+  font-size: 24px;
+  font-weight: 600;
+}
+.info--icon_lemon {
+  background-color: var(--languid-lavender);
+  height: 35px;
+  width: 70px;
+  padding: 5px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info--icon_lemon i {
+  color: #7776bc;
+  font-size: 25px;
+  font-weight: 600;
+}
+.info--icon_truck {
+  background-color: #f1bbd9;
+  height: 35px;
+  width: 70px;
+  padding: 5px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info--icon_truck i {
+  color: var(--tomato);
+  font-size: 24px;
+  font-weight: 600;
 }
 /* Helados  */
 
@@ -277,4 +341,90 @@ main {
 
 h2 span {
   color: var(--tomato);
+}
+
+/* Contact  */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  max-width: 1200px;
+  padding: 70px 0;
+}
+
+#contact p {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 90vh;
+}
+
+.contact-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--light-yellow);
+  border-radius: 25px;
+  padding: 4px 10px;
+}
+
+.contact-email input {
+  width: 280px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.contact-info img {
+  height: 65px;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-container i {
+  font-size: 22px;
+  color: var(--strong-text);
+  cursor: pointer;
+}
+
+.contact-icon-social i {
+  color: var(--electric);
+  cursor: pointer;
+}
+
+/* footer  */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: solid 1px black;
+  padding: 20px 0;
+  background: var(--corn);
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--strong-text);
 }

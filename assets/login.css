@@ -1,0 +1,88 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(to left, var(--bg-login), var(--pinky));
+}
+
+.navbar--list {
+  display: none;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px 0px;
+  margin-top: 65px;
+  max-width: 1200px;
+}
+
+.login-card,
+.reg-card {
+  display: flex;
+  height: 75vh;
+  border-radius: 20px;
+  background: linear-gradient(to left, var(--bg-login), var(--pinky));
+  width: 600px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 290px;
+  padding: 5px;
+}
+
+.login-title,
+.reg-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--strong-text);
+}
+
+.img-login {
+  width: 310px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.login-input,
+.reg-input {
+  padding: 15px 35px 15px 15px;
+  border-radius: 8px;
+  background-color: var(--light-yellow);
+  color: var(--strong-text);
+  outline: none;
+  border: none;
+}
+
+.reg-title {
+  margin-bottom: 8px;
+}
+
+.reg-input {
+  padding: 8px;
+}
+
+.reg-card {
+  height: 80vh;
+}
+
+.btn-submit {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: var(--tomato);
+  color: var(--light-yellow);
+}
+
+.icon-login {
+  width: 90px;
+}
