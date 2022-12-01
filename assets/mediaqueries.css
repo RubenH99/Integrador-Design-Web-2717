@@ -99,6 +99,17 @@
   .login-input {
     padding: 8px;
   }
+
+  .info--container--card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #info p,
+  #contact p {
+    padding: 25px;
+  }
 }
 
 @media (max-width: 416px) {
@@ -107,6 +118,18 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .contact-email input {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    height: 25px;
+  }
+
+  .contact-email {
+    flex-direction: column;
+    background-color: unset;
   }
 }
 
